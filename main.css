@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css?family=Iceland|Unica+One');
+
+/**** Reset CSS (remove browser defaults) ****/
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td {
+	margin: 0; padding: 0; border: 0; outline: none;
+}
+
+/********************
+ * Fonts
+ ********************/
+body { 	
+	font-size: 18px;
+	font-family: Calibri, Arial, sans-serif;
+	transition: font-size .5s;
+	/*text-align: justify;*/
+}
+ 
+header > h1{
+	font-size: 60px;
+	font-weight: bold;
+	font-family: 'Iceland', Calibri, Arial, sans-serif;	
+	transition: font-size .5s;
+}
+
+h2 {
+	font-size: 34px;
+	font-family: 'Iceland', Calibri, Arial, sans-serif;
+	transition: font-size .5s;
+}
+
+h3 {
+	font-size: 24px;
+	font-family: 'Iceland', Calibri, Arial, sans-serif;
+	transition: font-size .5s;
+}
+
+strong {
+	font-size: 22px;
+	font-family: 'Iceland', Calibri, Arial, sans-serif;
+}
+
+footer {
+	font-size: 16px;
+}
+
+nav > ul > li > a {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Unica One', Calibri, Arial, sans-serif;
+}
+
+
+/********************
+ * Colors
+ ********************/
+
+html {
+	background: rgb(220, 220, 220) url(images/background.jpg) no-repeat repeat top center scroll; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+ 
+body {
+	/*main font and bg colors for all pages */
+	color: rgb(120, 120, 120);		
+}
+
+header, footer {
+	/*font and bg colors for all headers and footers */
+	color: rgb(248, 248, 248);
+	background: rgb(80, 80, 90);
+}
+
+.darken {
+	background: rgba(0, 0, 0, .2);
+}
+
+.lighten {
+	background: rgba(255, 255, 255, .8);
+}
+
+nav > ul > li > .secA {  
+	color: rgb(248,176,176);
+	border-bottom-color: rgb(248,176,176);
+}
+
+nav > ul > li > .secB  {    
+	color: rgb(176,248,248);
+	border-bottom-color: rgb(176,248,248);
+}
+
+nav > ul > li > .secC  {  
+	color: rgb(248,248,176);
+	border-bottom-color: rgb(248,248,176);
+}
+
+nav > ul > li > .secD  {  
+	color: rgb(176,248,176);
+	border-bottom-color: rgb(176,248,176);
+}
+
+nav > ul > li > a {
+	color: #fff; /* IE8 proofing */
+	color: rgb(248,248,248);
+	border-bottom-color: rgb(248,248,248);
+}
+
+h2.secA, h3.secA, strong.secA {
+	color: rgb(160, 120, 120);
+}
+
+h2.secB, h3.secB, strong.secB {
+	color: rgb(120, 160, 160);
+}
+
+h2.secC, h3.secC, strong.secC {
+	color: rgb(160, 160, 120);
+}
+
+h2.secD, h3.secD, strong.secD {
+	color: rgb(120, 160, 120);
+}
+
+a {
+	color: rgb(80, 80, 90);
+}
+
+a:visited {
+	color: rgb(55, 55, 115);
+}
+
+a:hover ,
+a:focus {
+	color: rgb(115, 115, 150);
+}
+
+
+/********************
+ * Page Elements
+ ********************/
+ 
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	overflow-y: scroll;
+}
+
+header {
+	position: absolute;
+	width: 100%;
+}
+
+h1 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	white-space: nowrap;
+}
+
+h2 {
+	text-decoration: underline;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+h3 {
+	margin-bottom: 10px;
+}
+
+.box > ul {
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+p, .box > ul > li{
+	padding-bottom: 12px;
+}
+
+table, td{
+	padding-bottom: 20px;
+}
+
+.column {
+	max-width: 1024px;
+	margin: auto;
+}
+
+article {
+	min-height: 100%;
+}
+
+.box {
+	padding-top: 152px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	transition: padding .5s;
+}
+
+footer {
+	text-align: right;
+	width: 100%;
+	height: 20px;
+	position: relative;
+	bottom: 20px;
+	left: 0;
+}
+
+.footerbox {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+tr > .leftpad {
+	padding-left: 10px;
+}
+
+.project {
+	width: 128px;
+	transition: width .5s;
+}
+
+.portrait {
+	width: 140px;
+	padding-left: 40px;
+	padding-right: 40px;
+	transition: width .5s, padding .5s;
+}
+
+.homeimg {
+	max-width: 640px;
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+
+/********************
+ * Navigation Bar
+ ********************/
+
+nav {
+	white-space: nowrap;
+	font-size: 0px;
+}
+
+nav > ul > li {
+	display: inline-block;
+	margin-right: 10px;
+	transition: margin-right .5s;
+}
+
+nav > ul > li > a {
+	display: inline-block;
+
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+	text-decoration: none;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+
+	opacity: 0.7;
+	filter: alpha(opacity=7); /* For IE8 and earlier */
+	
+	-webkit-transition: padding .5s;
+	-moz-transition: padding .5s;
+	-o-transition: padding .5s;
+	-ms-transition: padding .5s;
+	transition: padding .5s;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+	padding-right: 30px;
+	padding-left: 30px;
+	background-color: rgba(0, 0, 0, .25);
+  
+	opacity: 0.85;
+	filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+
+nav > ul > .active > a
+{
+	padding-right: 30px;
+	padding-left: 30px;
+	
+	padding-bottom: 7px;
+	border-bottom-width: 6px;
+	background-color: rgba(0, 0, 0, .25);
+
+	opacity: 0.85;
+	filter: alpha(opacity=85); /* For IE8 and earlier */	
+}
+
+nav > ul > .active > a:hover,
+nav > ul > .active > a:focus {
+	background-color: rgba(0, 0, 0, .35);
+	
+	opacity: 1.0;
+	filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+
+/********************
+ * Small device CSS
+ ********************/
+@media (max-width: 768px) {
+	body { font-size: 16px;}
+	h2 { font-size: 30px;}
+	h3 { font-size: 22px;}
+	header > h1 {font-size: 44px;}
+	nav > ul > li { margin-right: 4px;}
+	nav > ul > li > a { padding-right: 10px; padding-left: 10px; font-size: 16px;}
+	nav > ul > .active > a { padding-right: 20px; padding-left: 20px;}
+	nav > ul > li > a:hover,
+	nav > ul > li > a:focus { padding-right: 20px; padding-left: 20px;}
+	.box {padding-top: 132px; padding-left: 10px; padding-right: 10px; }
+	.project{width: 96px;}
+	.portrait{width: 105px; padding-left: 20px; padding-right: 20px;}
+}
+
+@media (max-width:512px) {
+	body { font-size: 14px;}
+	h2 { font-size: 26px;}
+	h3 { font-size: 20px;}
+	header > h1 {font-size: 30px;}
+	nav > ul > li { margin-right: 2px;}
+	nav > ul > li > a { padding-right: 2px; padding-left: 2px; font-size: 14px;}
+	nav > ul > .active > a { padding-right: 10px; padding-left: 10px;}
+	nav > ul > li > a:hover,
+	nav > ul > li > a:focus { padding-right: 10px; padding-left: 10px;}
+	.box {padding-top: 117px; padding-left: 5px; padding-right: 5px; }
+	.project{width: 64px;}
+	.portrait{width: 70px; padding-left: 0px; padding-right: 0px;}
+}
