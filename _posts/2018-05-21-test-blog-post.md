@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: blogpost
 title: Test Blog Post!
 meta: test
-category: misc
+category: blog
 ---
 
 Testing
