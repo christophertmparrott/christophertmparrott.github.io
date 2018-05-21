@@ -1,36 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Projects > Christopher Parrott</title>
-		<meta name="description" content="Academic and personal website of Christopher Parrott" />
-		<meta name="keywords" content="christopher parrott, university of sheffield, sheffield" />
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="main.css" />
-	</head>
-	<body>
-	    <header>
-			<h1 class="column">Christopher Parrott</h1>
-			<nav class="darken">
-				<ul class="column">
-					<li><a class="secA" href="index.html">Home</a></li>
-					<li><a class="secB" href="publications.html">Publications</a></li>
-					<li class="active"><a class="secC" href="projects.html">Projects</a></li>
-					<li><a class="secD" href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-		
-		<article class="column lighten">
-			<div class="box">
+---
+layout: default
+---
 				<p>Below is a list of noteworthy personal and group projects that I have been involved in over the past decade. For projects with a degree of on-line presence, the alias of <i>Zodius</i> or <i>ZodiusInfuser</i> is used.</p>
 				<h3 class="secC">3D Design & Printing (2017 - Present)</h3>
 				<table>
 					<tr>
 						<td valign="top">
-							<a href="images/project-sgc-full.jpg" target="_blank"><img class="project" src="images/project-sgc.png" title="A functional clock & bluetooth speaker in the style of a Stargate" alt="A Stargate-inspired clock"/></a>
+							<a href="{{site.baseurl}}/images/project-sgc-full.jpg" target="_blank"><img class="project" src="{{site.baseurl}}/images/project-sgc.png" title="A functional clock & bluetooth speaker in the style of a Stargate" alt="A Stargate-inspired clock"/></a>
 						</td>
 						<td class="leftpad" valign="top">
 							<P>I have recently purchased an <a href="https://shop.prusa3d.com/en/3d-printers/59-original-prusa-i3-mk2-kit.html" target="_blank">Original Prusa i3 MK2S 3D printer</a> and have been using it to realise custom designs for various projects, ranging from an external graphics card enclosure to a Stargate-inspired clock & bluetooth speaker.</P>
@@ -45,7 +21,7 @@
 				<table>
 					<tr>
 						<td valign="top">
-							<a href="images/project-ir-full.png" target="_blank"><img class="project" src="images/project-ir.png" title="A robot arm made out of Infernal Robotics parts" alt="An Infernal Robotics arm"/></a>
+							<a href="{{site.baseurl}}/images/project-ir-full.png" target="_blank"><img class="project" src="{{site.baseurl}}/images/project-ir.png" title="A robot arm made out of Infernal Robotics parts" alt="An Infernal Robotics arm"/></a>
 						</td>
 						<td class="leftpad" valign="top">
 							<P>I am currently involved in a team working on the <a href="http://forum.kerbalspaceprogram.com/index.php?/topic/104535-112-magic-smoke-industries-infernal-robotics-202/" target="_blank">Infernal Robotics</a> mod for Kerbal Space Program. This mod adds various actuating parts to the game, allowing for players to build creations such as deployable spacecraft, mars rover replicas, and even bipedal walking robots. It also features state-machine functionality via the <a href="http://forum.kerbalspaceprogram.com/index.php?/topic/104547-12-ir-sequencer-v101-add-on-to-infernal-robotics-updated-30102016/" target="_blank">Sequencer</a> add-on, allowing players to visually program the movement of their creations.
@@ -67,7 +43,7 @@
 				<table>
 					<tr>
 						<td valign="top">
-							<a href="images/project-acse-full.jpg" target="_blank"><img class="project" src="images/project-acse.png" title="The tracked robot built for the ACSE search & rescue competition" alt="A tracked robot"/></a>
+							<a href="{{site.baseurl}}/images/project-acse-full.jpg" target="_blank"><img class="project" src="{{site.baseurl}}/images/project-acse.png" title="The tracked robot built for the ACSE search & rescue competition" alt="A tracked robot"/></a>
 						</td>
 						<td class="leftpad" valign="top">
 							<P>I participated as an advisor in the 2014 ACSE Annual Search & Rescue Robot Competition at The University Of Sheffield. The competition involves teams working together, with assistance from their advisor, to design and build a robot capable of being tele-operated through an obstacle course, representing hazards faced by real search & rescue robots. As advisor of a team, I provided input on the design of the robot and specific component choices, as well as assisting with the final modelling and manufacture of the robot. The resulting robot was track-based with two tracked arms that could be angled independently to help overcome uneven terrain. <!--A video trailer from competition day can be found below.--></p>
@@ -82,7 +58,7 @@
 				<table>
 					<tr>
 						<td valign="top">
-							<a href="images/project-infuser-full.jpg" target="_blank"><img class="project" src="images/project-infuser.png" title="The Infuser hexapod robot in its resting position" alt="A hexapod robot"/></a>
+							<a href="{{site.baseurl}}/images/project-infuser-full.jpg" target="_blank"><img class="project" src="{{site.baseurl}}/images/project-infuser.png" title="The Infuser hexapod robot in its resting position" alt="A hexapod robot"/></a>
 						</td>
 						<td class="leftpad" valign="top">
 							<p>I designed, built and programmed a 6-legged walking robot, with four degrees of freedom per leg. The robot was created as an exercise in learning modern electronics platforms such as <a href="https://www.arduino.cc/" target="_blank">Arduino</a> as well as the challenges involved in hardware development. The completed robot features three microcontroller boards, an audio processing and playback unit, ultrasonic sensors, Bluetooth, a camera on a pan-tilt mount, and RGB LEDs. Three custom circuit boards were created for the project, using <a href="https://www.rs-online.com/designspark/pcb-software" target="_blank">DesignSpark PCB</a>. The software was successfully able to have the robot walk forward and turn on the spot. <!--A link to a video showing the hexapod's first steps can be found below.--></p>
@@ -97,7 +73,7 @@
 				<table>
 					<tr>
 						<td valign="top">
-							<a href="images/project-as-full.jpg" target="_blank"><img class="project" src="images/project-as.png" title="An amBX computer setup running Aurora Synesthesia" alt="An amBX computer setup"/></a>
+							<a href="{{site.baseurl}}/images/project-as-full.jpg" target="_blank"><img class="project" src="{{site.baseurl}}/images/project-as.png" title="An amBX computer setup running Aurora Synesthesia" alt="An amBX computer setup"/></a>
 						</td>
 						<td class="leftpad" valign="top">
 							<p>I developed a Windows tray application for commanding the <a href="http://www.philips.co.uk/c-p/SGC5103BD_05/premium-kit" target="_blank">amBX lighting kit</a> based on screen colour and currently playing sounds. A fast fourier transform library was used to analyse any sounds played and have the lights react in various user selectable ways. Additionally, I included a number of static and cycling effects, that would play when no screen or sound input was detected. Aurora Synesthesia became the most popular add-on within the amBX community. As of early 2016, the software and its source code can not be downloaded from Github. <!--Links to the current download location and a playlist of user-created videos can be found below.--></p>
@@ -116,7 +92,7 @@
 				<table>
 					<tr>
 						<td valign="top">
-							<a href="images/project-ta-full.gif" target="_blank"><img class="project" src="images/project-ta.png" title="A walking ship unit for Total Annihilation" alt="A walking ship unit"/></a>
+							<a href="{{site.baseurl}}/images/project-ta-full.gif" target="_blank"><img class="project" src="{{site.baseurl}}/images/project-ta.png" title="A walking ship unit for Total Annihilation" alt="A walking ship unit"/></a>
 						</td>
 						<td class="leftpad" valign="top">
 							<p>I created units for the classic real-time strategy game, Total Annihilation. Units ranged from simple tanks to complex bipedal mechs. In addition, collaborations were made with fellow members of the community to introduce features such as teleportation and inverse kinematics to the game. To store the units for others to download, I produced a website called Infusion Designs. This website also hosts a gallary of images from the game as well as concepts and renders of units. <!--The link to this website can be found below.--></p>
@@ -126,15 +102,3 @@
 						</td>	
 					</tr>
 				</table>
-			</div>
-		</article>
-			
-		<footer>
-			<div class="darken">
-				<div class="column">
-					<span class="footerbox">&copy; Christopher Parrott, 2016</span>
-				</div>
-			</div>
-		</footer>
-	</body>
-</html>
