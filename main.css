@@ -102,6 +102,11 @@ nav > ul > li > .secD  {
 	border-bottom-color: rgb(176,248,176);
 }
 
+nav > ul > li > .secE  {  
+	color: rgb(176,176,248);
+	border-bottom-color: rgb(176,176,248);
+}
+
 nav > ul > li > a {
 	color: #fff; /* IE8 proofing */
 	color: rgb(248,248,248);
@@ -122,6 +127,10 @@ h2.secC, h3.secC, strong.secC {
 
 h2.secD, h3.secD, strong.secD {
 	color: rgb(120, 160, 120);
+}
+
+h2.secE, h3.secE, strong.secE {
+	color: rgb(120, 120, 160);
 }
 
 a {
