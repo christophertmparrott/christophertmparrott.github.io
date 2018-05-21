@@ -2,26 +2,13 @@
 layout: default
 title: Blog
 ---
-				<table>
-					<tr>
-						<td valign="center">
-							<img class="portrait" src="{{site.baseurl}}/images/portrait.png" title="A picture of Christopher Parrott" alt="Christopher Parrott"/></a>
-						</td>
-						<td class="leftpad" valign="top">
-							<p><strong class="secE">Academic Address:</strong><br>
-							Christopher Parrott<br />
-							Department of Mechanical Engineering<br />
-							The University of Sheffield<br />
-							Sheffield, UK<br />
-							S1 3JD</p>
-							
-							<p><strong class="secE">Academic Email:</strong>
-							c.parrott [at] sheffield [dot] ac.uk</p>
-							
-							<p><strong class="secE">Personal Email:</strong>
-							christophertmparrott [at] gmail [dot] com</p>
-							
-							<p><strong class="secE"><a href="http://uk.linkedin.com/in/christophertmparrott" target="_blank">Linkedin</a></strong></p>					
-						</td>	
-					</tr>
-				</table>
+				<h2 class="secE">Blog</h2>
+				
+				<ul>
+					{% for post in site.posts%}
+					<li>
+						<a href="{{post.url}}">{{post.title}}</a>
+						<p>{{post.meta}}</p>
+					</li>
+					{% endfor %}
+				</ul>
