@@ -1,2 +1,2 @@
 baseurl: ""
-exclude: ['README.md', '.gitignore', 'favicon.ico', 'icon.png']
+exclude: ['README.md', '.gitignore']
