@@ -7,11 +7,27 @@
 		<title>Test > Christopher Parrott</title>
 		<meta name="description" content="Contact Information of Christopher Parrott" />
 		<meta name="keywords" content="christopher parrott, university of sheffield, sheffield" />
-		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="main.css" />
+		<link rel="shortcut icon" href="{site.baseurl}}/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="{site.baseurl}}/main.css" />
 	</head>
 	<body>
+		<header>
+			<h1 class="column">Christopher Parrott</h1>
+			<nav class="darken">
+				<ul class="column">
+					<li class="{% if page.url == '/' %}active{% endif %}"><a class="secA" href="{{site.baseurl}}/">Home</a></li>
+					<li class="{% if page.url == '/publications.html' %}active{% endif %}"><a class="secB" href="{site.baseurl}}/publications.html">Publications</a></li>
+					<li class="{% if page.url == '/projects.html' %}active{% endif %}"><a class="secC" href="{site.baseurl}}/projects.html">Projects</a></li>
+					<li class="{% if page.url == '/test.html' %}active{% endif %}"><a class="secD" href="{site.baseurl}}/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<article class="column lighten">
+			<div class="box">
 {{content}}	
+			</div>
+		</article>
 
 		<footer>
 			<div class="darken">
