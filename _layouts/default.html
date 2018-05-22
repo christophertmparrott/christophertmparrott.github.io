@@ -9,12 +9,25 @@
 		<meta name="description" content="{% if page.description %}{{page.description}}{% endif %}" />
 		<meta name="keywords" content="christopher parrott, university of sheffield, sheffield" />
 		<link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/main.css" />
 	</head>
 	<body>
 		<header>
-			<h1 class="column">Christopher Parrott</h1>
+			<div class="column">
+				<h1>Christopher Parrott</h1>
+				<h2>Programming | Electronics | 3D Printing | Robotics</h2>
+			</div>
 			<nav class="darken">
+				<div class="column">
+					<div class="social">
+						<a class="fa fa-twitter" href="https://twitter.com/ZodiusInfuser" target="_blank"></a>
+						<a class="fa fa-youtube" href="https://www.youtube.com/user/ZodiusInfuser" target="_blank"></a>
+						<a class="fa fa-twitch" href="https://www.twitch.tv/zodiusinfuser" target="_blank"></a>
+						<a class="fa fa-github" href="https://github.com/ZodiusInfuser" target="_blank"></a>
+						<a class="fa fa-linkedin" href="https://www.linkedin.com/in/christophertmparrott/" target="_blank"></a>-->
+					</div>				
+				</div>
 				<ul class="column">
 					<li class="{% if page.url == '/' %}active{% endif %}"><a class="secA" href="{{site.baseurl}}/">Home</a></li>
 					<li class="{% if page.url contains '/blog/' %}active{% endif %}"><a class="secE" href="{{site.baseurl}}/blog/">Blog</a></li>
