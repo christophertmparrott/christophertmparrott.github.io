@@ -3,3 +3,4 @@ exclude: ['README.md', '.gitignore']
 permalink: pretty
 paginate: 1
 paginate_path: "/bloggg/page:num"
+excerpt_separator: "<!--excerpt-->"

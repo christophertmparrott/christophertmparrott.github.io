@@ -9,6 +9,9 @@ title: Bloggg
 				{% for post in paginator.posts %}
 					<li><a href="{{site.baseurl}}{{post.url}}"><h3>{{post.title}}</h3></a>
 					{{post.excerpt}}
+					{% if post.content contains site.excerpt_separator %}
+						<a href="{{site.baseurl}}{{ post.url}}">Continue reading --></a>
+					{% endif %}
 					</li>
 				{% endfor %}
 				</ul>
