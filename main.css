@@ -369,7 +369,8 @@ nav > ul > .active > a:focus {
 }
 
 .fa:focus,
-.fa:active {
+.fa:active,
+.fa:visited {
 	color: rgb(176, 176, 176);
 }
 
