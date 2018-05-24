@@ -312,6 +312,46 @@ tr > .leftpad {
 	overflow: hidden;
 }
 
+.sharebtns > a:focus,
+.sharebtns > a:active,
+.sharebtns > a:visited {
+	color: rgb(80, 80, 90);
+}
+
+.sharebtns > a:hover,
+.sharebtns > a:focus {
+	color: rgb(80, 80, 90);
+
+	opacity: 0.85;
+	filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+
+.sharebtns > a {
+	font-size: 18px;
+	transition: font-size .5s;
+	
+	color: rgb(80, 80, 90);
+	
+	border: none;
+	padding: 2px 8px;	
+	text-align: center;
+	vertical-align: top;
+	text-decoration: none;
+	
+	opacity: 0.7;
+	filter: alpha(opacity=7); /* For IE8 and earlier */
+	
+	border-radius: 6px;
+	
+	font-weight: bold;
+	
+	overflow: hidden;
+}
+
+.sharebtns > a > span {
+	font-family: Calibri, Arial, sans-serif;
+}
+
 .posthead > a:focus,
 .posthead > a:active,
 .posthead > a:visited {
@@ -430,6 +470,10 @@ nav > ul > .active > a:focus {
  * Post Navigation
  ********************/
 
+.postnav {
+	padding-top: 20px;
+}
+
 .postnav > a {
 	border: none;
 	padding: 10px 20px;
@@ -492,6 +536,7 @@ nav > ul > .active > a:focus {
 }
 
 .pagenav {
+	padding-top: 20px;
 	text-align: center;
 }
 
