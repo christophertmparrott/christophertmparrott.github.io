@@ -303,7 +303,8 @@ tr > .leftpad {
 	padding-bottom: 20px;
 }
 
-.posthead {
+.posthead,
+.taghead {
 	padding-bottom: 30px;
 }
 
@@ -312,7 +313,8 @@ tr > .leftpad {
 	text-decoration: none;
 }
 
-.posthead > a {
+.posthead > a,
+.taghead > a {
 	border: none;
 	padding: 2px 8px;	
 	text-align: center;
@@ -326,6 +328,10 @@ tr > .leftpad {
 	font-weight: bold;
 	
 	overflow: hidden;
+}
+
+.taghead {
+	text-align: center;
 }
 
 .sharebtns > a:focus,
@@ -370,12 +376,17 @@ tr > .leftpad {
 
 .posthead > a:focus,
 .posthead > a:active,
-.posthead > a:visited {
+.posthead > a:visited
+.taghead > a:focus,
+.taghead > a:active,
+.taghead > a:visited {
 	color: rgb(80, 80, 90);
 }
 
 .posthead > a:hover,
-.posthead > a:focus {
+.posthead > a:focus,
+.taghead > a:hover,
+.taghead > a:focus {
 	color: rgb(80, 80, 90);
 
 	opacity: 0.85;
