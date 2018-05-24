@@ -5,11 +5,11 @@ title: Bloggg
 				<h2 class="secE">Bloggg Coming Soon!!</h2>
 				
 				<!-- post list -->
-				<ul>
+				<ul style="text-decoration: none">
 				{% for post in paginator.posts %}
-					<li>
+					<li style="text-decoration: none">
 						<div class="posthead">
-							<a href="{{site.baseurl}}{{post.url}}"><h2 class="secE">{{post.title}}</h2></a>
+							<h2 class="secE"><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h2>
 							<b>{{ post.date | date: "%B %-d, %Y" }}</b>
 							{% if post.topic %}
 							&bull; Category: <a class="darken" href="/category#{{post.topic}}">{{post.topic}}</a>
