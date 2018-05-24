@@ -10,7 +10,7 @@ layout: default
 					{% if page.tags %}
 					&bull; Tags: 
 					{% for tag in page.tags %}
-					<a class="darken" href="/bloggg/tags/#{{tag}}">{{tag}}</a>
+					<a class="darken" href="/bloggg/tag/#{{tag | slugify}}">{{tag}}</a>
 					{% endfor %}  
 					{% endif %}
 				</div>
