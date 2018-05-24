@@ -555,17 +555,17 @@ nav > ul > .active > a:focus {
 }
 
 .pagenav > .newer {
-	border-left-width: 3px;
-	border-left-style: solid;
-	border-top-right-radius: 8px;
-	border-bottom-right-radius: 8px;
-}
-
-.pagenav > .older {
 	border-right-width: 3px;
 	border-right-style: solid;
 	border-top-left-radius: 8px;
 	border-bottom-left-radius: 8px;
+}
+
+.pagenav > .older {
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
 }
 
 .pagenav > .middle {

@@ -34,10 +34,10 @@ title: Bloggg
 				<!-- pagination -->
 			{% if paginator.total_pages > 1 %}
 				<div class="pagenav"> 
-				{% if paginator.previous_page %}
-					<a class="darken newer" href="{{site.baseurl}}{{ paginator.previous_page_path}}">&larr; Older</a>
+				{% if paginator.next_page %}
+					<a class="darken older" href="{{site.baseurl}}{{ paginator.next_page_path}}">&larr; Older</a>
 				{% else %}
-					<span class="darken newer">&larr; Older</span>
+					<span class="darken older">&larr; Older</span>
 				{% endif %}
 
 				{% for page in (1..paginator.total_pages) reversed %}
@@ -50,10 +50,10 @@ title: Bloggg
 					{% endif %}
 				{% endfor %}
 
-				{% if paginator.next_page %}
-					<a class="darken older" href="{{site.baseurl}}{{paginator.next_page_path}}">Newer &rarr;</a>
+				{% if paginator.previous_page %}
+					<a class="darken newer" href="{{site.baseurl}}{{paginator.previous_page_path}}">Newer &rarr;</a>
 				{% else %}
-					<span class="darken older">Newer &rarr;</span>
+					<span class="darken newer">Newer &rarr;</span>
 				{% endif %}
 				</div>
 			{% endif %}
