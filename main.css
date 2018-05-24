@@ -490,7 +490,88 @@ nav > ul > .active > a:focus {
 	border-top-left-radius: 8px;
 	border-bottom-left-radius: 8px;
 }
-		
+
+.pagenav {
+	text-align: center;
+}
+
+.pagenav > span {
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	
+	max-width: 45%;
+	
+	opacity: 0.4;
+	filter: alpha(opacity=4); /* For IE8 and earlier */
+	
+	font-weight: bold;
+	
+	overflow: hidden;
+}
+
+.pagenav > a {
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	
+	max-width: 45%;
+	
+	-webkit-transition: padding .5s;
+	-moz-transition: padding .5s;
+	-o-transition: padding .5s;
+	-ms-transition: padding .5s;
+	transition: padding .5s;
+	
+	opacity: 0.7;
+	filter: alpha(opacity=7); /* For IE8 and earlier */
+	
+	font-weight: bold;
+	
+	overflow: hidden;
+}
+
+.pagenav > a:focus,
+.pagenav > a:active,
+.pagenav > a:visited {
+	color: rgb(80, 80, 90);
+}
+
+.pagenav > a:hover,
+.pagenav > a:focus {
+	padding-left: 30px;
+	padding-right: 30px;
+	
+	color: rgb(80, 80, 90);
+	
+	opacity: 0.85;
+	filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+
+.pagenav > .newer {
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.pagenav > .older {
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.pagenav > .middle {
+	border-radius: 8px;
+}
+
 
 /********************
  * Small device CSS
