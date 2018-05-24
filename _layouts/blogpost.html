@@ -10,14 +10,10 @@ layout: default
 						<a class="darken" href="/tags#{{tag}}">{{tag}}</a>
 					{% endfor %}  
 				</div>
-				<div class="posthead">
-					<h2 class="secE">{{page.title}}</h2>
-					<p>{{ page.date | date: "%B %-d, %Y" }} | Posted in: Deadmau5 Cube</p>
-					<p>Tags: Electronics, 3D Printing</p>
-				</div>
 				
 {{content}}
-				<div class="PageNavigation">
+
+				<div class="postnav">
 				{% if page.previous.url %}
 					<a class="darken prev" href="{{site.baseurl}}{{page.previous.url}}">&larr; {{page.previous.title}}</a>
 				{% endif %}
