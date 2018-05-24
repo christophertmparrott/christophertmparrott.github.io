@@ -177,7 +177,7 @@ a:focus {
 	display: none;
 }
 
-:target {
+.taglist:target {
 	display: block;
 }
 
