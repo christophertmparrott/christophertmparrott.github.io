@@ -173,6 +173,13 @@ a:focus {
 	color: rgb(115, 115, 150);
 }
 
+.taglist {
+	display: none;
+}
+
+:target {
+	display: block;
+}
 
 /********************
  * Page Elements
