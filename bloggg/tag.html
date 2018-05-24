@@ -60,7 +60,7 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 		 <li>
 			 <b><a href="{{site.baseurl}}{{post.url}}">
 			 {{post.title}}</a></b>
-			 &bull; {{page.date | date: "%B %-d, %Y"}}
+			 &bull; {{post.date | date: "%B %-d, %Y"}}
 		 </li>
 		 {% endif %}
 	 {% endfor %}
