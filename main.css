@@ -126,8 +126,8 @@ nav > ul > li > .secE  {
 }
 
 nav > ul > li > .secF  {  
-	color: rgb(176,248,248);
-	border-bottom-color: rgb(176,248,248);
+	color: rgb(248,176,248);
+	border-bottom-color: rgb(248,176,248);
 }
 
 nav > ul > li > a {
@@ -157,7 +157,7 @@ h2.secE, h3.secE, strong.secE, span.secE {
 }
 
 h2.secF, h3.secF, strong.secF, span.secF {
-	color: rgb(120, 160, 160);
+	color: rgb(160, 120, 160);
 }
 
 a {
