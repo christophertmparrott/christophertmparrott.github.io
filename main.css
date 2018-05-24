@@ -320,8 +320,19 @@ tr > .leftpad {
 
 .posthead > a:hover,
 .posthead > a:focus {
+	color: rgb(80, 80, 90);
+
 	opacity: 0.85;
 	filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+
+.paginator > ul {
+	padding: 0;
+}
+.paginator > ul > li {
+
+	display: inline-block;
+	text-decoration: none;
 }
 
 /********************

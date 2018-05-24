@@ -5,9 +5,10 @@ title: Bloggg
 				<h2 class="secE">Bloggg Coming Soon!!</h2>
 				
 				<!-- post list -->
-				<ul style="text-decoration: none">
-				{% for post in paginator.posts %}
-					<li style="text-decoration: none">
+				<div class="paginator">
+				<ul>				
+					{% for post in paginator.posts %}
+					<li>
 						<div class="posthead">
 							<h2 class="secE"><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h2>
 							<b>{{ post.date | date: "%B %-d, %Y" }}</b>
@@ -30,6 +31,7 @@ title: Bloggg
 					</li>
 				{% endfor %}
 				</ul>
+				</div>
 
 
 				<!-- pagination -->
