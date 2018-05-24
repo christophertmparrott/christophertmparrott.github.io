@@ -1,13 +1,27 @@
 ---
 layout: default
 ---
-				<h3 class="secE">{{page.title}} ({{ page.date | date: "%-d/%-m/%Y" }})</h3>
+				<div class="posthead">
+					<h2 class="secE">{{page.title}}</h2>
+					<b>{{ page.date | date: "%B %-d, %Y" }}</b> &bull;
+					Category: <a class="darken" href="/category#{{page.topic}}">{{page.topic}}</a> &bull;
+					Tags: 
+					{% for tag in page.tags %}
+						<a class="darken" href="/tags#{{tag}}">{{tag}}</a>
+					{% endfor %}  
+				</div>
+				<div class="posthead">
+					<h2 class="secE">{{page.title}}</h2>
+					<p>{{ page.date | date: "%B %-d, %Y" }} | Posted in: Deadmau5 Cube</p>
+					<p>Tags: Electronics, 3D Printing</p>
+				</div>
+				
 {{content}}
 				<div class="PageNavigation">
 				{% if page.previous.url %}
-					<a class="prev" href="{{site.baseurl}}{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+					<a class="darken prev" href="{{site.baseurl}}{{page.previous.url}}">&larr; {{page.previous.title}}</a>
 				{% endif %}
 				{% if page.next.url %}
-					<a class="next" href="{{site.baseurl}}{{page.next.url}}">{{page.next.title}} &raquo;</a>
+					<a class="darken next" href="{{site.baseurl}}{{page.next.url}}">{{page.next.title}} &rarr;</a>
 				{% endif %}
 				</div>
