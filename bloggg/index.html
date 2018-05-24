@@ -35,7 +35,7 @@ title: Bloggg
 				
 				<!-- pagination -->
 			{% if paginator.total_pages > 1 %}
-				<div class="pagination"> 
+				<div class="pagenav"> 
 				{% if paginator.previous_page %}
 					<a class="darken newer" href="{{site.baseurl}}{{ paginator.previous_page_path}}">&larr; Newer</a>
 				{% else %}
@@ -53,7 +53,7 @@ title: Bloggg
 				{% endfor %}
 
 				{% if paginator.next_page %}
-					<a class="darken older" href="{{site.baseurl}}{{paginator.next_page_path}}">Older &larr;</a>
+					<a class="darken older" href="{{site.baseurl}}{{paginator.next_page_path}}">Older &rarr;</a>
 				{% else %}
 					<span class="darken older">Older &rarr;</span>
 				{% endif %}
