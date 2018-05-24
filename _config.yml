@@ -4,3 +4,5 @@ permalink: pretty
 paginate: 1
 paginate_path: "/bloggg/page:num"
 excerpt_separator: "<!--excerpt-->"
+compress_html:
+  blanklines: true
