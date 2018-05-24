@@ -44,7 +44,7 @@ title: Bloggg
 					{% if page == paginator.page %}
 					<span class="darken middle">{{page}}</span>
 					{% elsif page == 1 %}
-					<a class="darken middle" href="/">{{page}}</a>
+					<a class="darken middle" href="{{site.baseurl}}/bloggg/">{{page}}</a>
 					{% else %}
 					<a class="darken middle" href="{{site.baseurl}}{{site.paginate_path | replace: ':num', page }}">{{page}}</a>
 					{% endif %}
