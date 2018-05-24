@@ -4,9 +4,6 @@ layout: default
 				<div class="posthead">
 					<h2 class="secE">{{page.title}}</h2>
 					<b>{{ page.date | date: "%B %-d, %Y" }}</b>
-					{% if page.topic %}
-					&bull; Category: <a class="darken" href="{{site.baseurl}}/bloggg/category/#{{page.topic | slugify}}">{{page.topic}}</a>
-					{% endif %}
 					{% if page.tags %}
 					&bull; Tags: 
 					{% for tag in page.tags %}

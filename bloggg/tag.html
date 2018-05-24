@@ -38,12 +38,12 @@ The following part removes duplicated tags and invalid tags like blank tag.
 The purpose of this snippet is to list all the tags you have in your site.
 =======================
 {% endcomment %}
-<div class="taghead">
+<!--<div class="taghead">
 	<h2 class="secE">Tags</h2>
 {% for tag in tags %}
 	<a class="darken" href="#{{tag | slugify}}">{{tag}}</a>
 {% endfor %}
-</div>
+</div>-->
 
 
 {% comment %}
@@ -53,17 +53,32 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 {% endcomment %}
 {% for tag in tags %}
 <div class="posthead taglist" id="{{tag | slugify}}">
-	<h2 class="secE" id="{{tag | slugify}}">{{tag}}</h2>
+	<h2 class="secE" id="{{tag | slugify}}">Posts tagged with {{tag}}</h2>
 	<ul>
 	 {% for post in site.posts %}
 		 {% if post.tags contains tag %}
 		 <li>
+			<div class="posthead">
 			 <b><a href="{{site.baseurl}}{{post.url}}">
 			 {{post.title}}</a></b>
 			 &bull; {{post.date | date: "%B %-d, %Y"}}
+			 {% if post.tags %}
+			 &bull; Tags: 
+			 {% for tag in page.tags %}
+					<a class="darken" href="{{site.baseurl}}/bloggg/tag/#{{tag | slugify}}">{{tag}}</a>
+			 {% endfor %}
+			 {% endif %}
+			</div>
 		 </li>
 		 {% endif %}
 	 {% endfor %}
 	</ul>
 </div>
 {% endfor %}
+
+			<div class="sharebtns">
+				<b>All Tags: </b>
+			{% for tag in tags %}
+				<a class="darken" href="#{{tag | slugify}}">{{tag}}</a>
+			{% endfor %}
+			</div>
