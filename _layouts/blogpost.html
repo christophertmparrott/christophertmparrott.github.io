@@ -3,12 +3,12 @@ layout: default
 ---
 				<div class="posthead">
 					<h2 class="secE">{{page.title}}</h2>
-					<b>{{ page.date | date: "%B %-d, %Y" }}</b> &bull;
+					<b>{{ page.date | date: "%B %-d, %Y" }}</b>
 					{% if page.topic %}
-					Category: <a class="darken" href="/category#{{page.topic}}">{{page.topic}}</a> &bull;
+					&bull; Category: <a class="darken" href="/category#{{page.topic}}">{{page.topic}}</a>
 					{% endif %}
 					{% if page.tags %}
-					Tags: 
+					&bull; Tags: 
 					{% for tag in page.tags %}
 					<a class="darken" href="/tags#{{tag}}">{{tag}}</a>
 					{% endfor %}  

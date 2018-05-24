@@ -7,10 +7,25 @@ title: Bloggg
 				<!-- post list -->
 				<ul>
 				{% for post in paginator.posts %}
-					<li><a href="{{site.baseurl}}{{post.url}}"><h3>{{post.title}}</h3></a>
-					{{post.excerpt}}
+					<li>
+						<div class="posthead">
+							<a href="{{site.baseurl}}{{post.url}}"><h2 class="secE">{{page.title}}</h2></a>
+							<b>{{ page.date | date: "%B %-d, %Y" }}</b>
+							{% if page.topic %}
+							&bull; Category: <a class="darken" href="/category#{{page.topic}}">{{page.topic}}</a>
+							{% endif %}
+							{% if page.tags %}
+							&bull; Tags: 
+							{% for tag in page.tags %}
+							<a class="darken" href="/tags#{{tag}}">{{tag}}</a>
+							{% endfor %}  
+							{% endif %}
+						</div>
+						
+{{post.excerpt}}
+
 					{% if post.content contains site.excerpt_separator %}
-						<a href="{{site.baseurl}}{{ post.url}}">Continue reading --></a>
+						<a href="{{site.baseurl}}{{post.url}}">Continue reading --></a>
 					{% endif %}
 					</li>
 				{% endfor %}
