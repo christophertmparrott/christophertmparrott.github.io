@@ -11,12 +11,8 @@ For close to a decade I have been doing fun electronics and programming projects
 
 <!--excerpt-->
 
-<div style="text-align:center">
-	<img align="center" src="https://christophertmparrott.github.io/bloggg/images/2018-06-01-me_and_colin_furze.jpg" alt="Me with Colin Furze" />
-</div>
-<div style="text-align:center">
-	<img align="center" src="https://christophertmparrott.github.io/bloggg/images/2018-06-01-me_and_lucy_rogers.jpg" alt="Me with Dr Lucy Rogers" />
-</div>
+![Me & Colin Furze](https://christophertmparrott.github.io/bloggg/images/2018-06-01-me_and_colin_furze.jpg "Me with Colin Furze")  
+![Me & Dr Lucy Rogers](https://christophertmparrott.github.io/bloggg/images/2018-06-01-me_and_lucy_rogers.jpg "Me with Dr Lucy Rogers")
 
 Now that this blog is live, expect to see weekly (I hope) updates on a variety of hardware and software projects I have in the works, as well as several planned robotics projects down the line too! There may also be more random posts such as kit reviews or thoughts on any future maker events I attend. Here's a teaser of some of the projects already in the works!
 

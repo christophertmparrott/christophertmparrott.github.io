@@ -402,6 +402,10 @@ tr > .leftpad {
 	text-decoration: none;
 }
 
+.blogpost > p > img {
+	text-align: center;
+}
+
 /********************
  * Navigation Bar
  ********************/
