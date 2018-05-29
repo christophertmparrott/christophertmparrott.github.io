@@ -7,7 +7,7 @@ tags: [Misc]
 
 Hi and welcome to my blog! This is my first time blogging so let me begin by giving you a bit of the reasoning behind why I set this up.
 
-For close to a decade I have been doing fun electronics and programming projects in my spare time, sharing my progress with friends and family, but rarely with the wider world. Recently I had the opportunity to attend the UK Maker Faire in Newcastle. This was my first time going, and although the event was nowhere near the scale of those in other countries, being there and getting to meet makers like Colin Furze (https://www.youtube.com/user/colinfurze) and Dr Lucy Rogers (https://lucyrogers.com/) opened my eyes to the maker community and the possibility of being a part of it! For that though, I need to share my projects with a wider audience, and so I set this website up!
+For close to a decade I have been doing fun electronics and programming projects in my spare time, sharing my progress with friends and family, but rarely with the wider world. Recently I had the opportunity to attend the UK Maker Faire in Newcastle. This was my first time going, and although the event was nowhere near the scale of those in other countries, being there and getting to meet makers like [Colin Furze](https://www.youtube.com/user/colinfurze) and [Dr Lucy Rogers](https://lucyrogers.com/) opened my eyes to the maker community and the possibility of being a part of it! For that though, I need to share my projects with a wider audience, and so I set this website up!
 
 <!--excerpt-->
 
