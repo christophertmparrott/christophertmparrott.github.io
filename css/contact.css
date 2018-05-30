@@ -24,6 +24,10 @@ tr > .leftpad {
 	padding-left: 10px;
 }
 
+p, .box > ul > li{
+	padding-bottom: 12px;
+}
+
 
 /********************
  * Small device CSS
