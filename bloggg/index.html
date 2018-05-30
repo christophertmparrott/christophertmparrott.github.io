@@ -32,9 +32,8 @@ The following part removes duplicated tags and invalid tags like blank tag.
 {% endfor %}
 				<!-- post list -->
 				<div class="paginator">
-				<ul>				
-					{% for post in paginator.posts %}
-					<li>
+				{% for post in paginator.posts %}
+					<div class="postprvw">
 						<div class="posthead">
 							<h2 class="secE"><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h2>
 							<b>{{ post.date | date: "%B %-d, %Y" }}</b>
@@ -45,15 +44,12 @@ The following part removes duplicated tags and invalid tags like blank tag.
 							{% endfor %}  
 							{% endif %}
 						</div>
-						
 {{post.excerpt}}
-
 					{% if post.content contains site.excerpt_separator %}
-						<a href="{{site.baseurl}}{{post.url}}">Continue reading --></a>
+						<a href="{{site.baseurl}}{{post.url}}"><b>Continue Reading &rarr;</b></a>
 					{% endif %}
-					</li>
+					</div>
 				{% endfor %}
-				</ul>
 				</div>
 				
 				<!-- pagination -->

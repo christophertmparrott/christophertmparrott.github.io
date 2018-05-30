@@ -417,6 +417,10 @@ tr > .leftpad {
     margin-right: auto;
 }
 
+.postprvw {
+	margin-bottom: 40px;
+}
+
 /********************
  * Navigation Bar
  ********************/
