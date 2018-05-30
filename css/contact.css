@@ -16,6 +16,14 @@ h2, h3, strong {
 	transition: width .5s, padding .5s;
 }
 
+table, td{
+	padding-bottom: 20px;
+}
+
+tr > .leftpad {
+	padding-left: 10px;
+}
+
 
 /********************
  * Small device CSS
