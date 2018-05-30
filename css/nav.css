@@ -1,0 +1,179 @@
+/********************
+ * Fonts
+ ********************/
+nav li a {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: 'Unica One', Calibri, Arial, sans-serif;
+}
+
+
+/********************
+ * Colors
+ ********************/
+nav  a {
+	color: #fff; /* IE8 proofing */
+	color: rgb(248,248,248);
+	border-bottom-color: rgb(248,248,248);
+}
+
+nav a.secA {  
+	color: rgb(248,176,176);
+	border-bottom-color: rgb(248,176,176);
+}
+
+nav a.secB  {    
+	color: rgb(176,248,248);
+	border-bottom-color: rgb(176,248,248);
+}
+
+nav a.secC  {  
+	color: rgb(248,248,176);
+	border-bottom-color: rgb(248,248,176);
+}
+
+nav a.secD  {  
+	color: rgb(176,248,176);
+	border-bottom-color: rgb(176,248,176);
+}
+
+nav a.secE  {  
+	color: rgb(176,176,248);
+	border-bottom-color: rgb(176,176,248);
+}
+
+nav a.secF  {  
+	color: rgb(248,176,248);
+	border-bottom-color: rgb(248,176,248);
+}
+
+
+/********************
+ * Page Elements
+ ********************/
+nav > div {
+	position: relative;
+	height: 0%;
+}
+
+nav {
+	white-space: nowrap;
+	font-size: 0px;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 10px;
+	transition: margin-right .5s;
+}
+
+nav li a {
+	display: inline-block;
+
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+	text-decoration: none;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+
+	opacity: 0.7;
+	filter: alpha(opacity=7); /* For IE8 and earlier */
+	
+	-webkit-transition: padding .5s;
+	-moz-transition: padding .5s;
+	-o-transition: padding .5s;
+	-ms-transition: padding .5s;
+	transition: padding .5s;
+}
+
+nav li a:hover,
+nav li a:focus {
+	padding-right: 30px;
+	padding-left: 30px;
+	background-color: rgba(0, 0, 0, .25);
+  
+	opacity: 0.85;
+	filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+
+nav li .active
+{
+	padding-right: 30px;
+	padding-left: 30px;
+	
+	padding-bottom: 7px;
+	border-bottom-width: 6px;
+	background-color: rgba(0, 0, 0, .25);
+
+	opacity: 0.85;
+	filter: alpha(opacity=85); /* For IE8 and earlier */	
+}
+
+nav li .active:hover,
+nav li .active:focus {
+	background-color: rgba(0, 0, 0, .35);
+	
+	opacity: 1.0;
+	filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+nav .fa {
+	font-size: 24.6px;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	margin: 0px;
+	vertical-align: middle;
+	color: rgb(176, 176, 176);
+}
+
+nav .fa:focus,
+nav .fa:active,
+nav .fa:visited {
+	color: rgb(176, 176, 176);
+}
+
+nav .fa:hover {
+	color: rgb(248, 248, 248);
+}
+
+nav .social {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+}
+
+nav .social a {
+	vertical-align: middle;
+}
+
+
+/********************
+ * Small device CSS
+ ********************/
+@media (max-width: 820px) {
+	nav li { margin-right: 4px;}
+	nav li a { padding-right: 10px; padding-left: 10px; font-size: 16px;}
+	nav li .active { padding-right: 20px; padding-left: 20px;}
+	nav li a:hover,
+	nav li a:focus { padding-right: 20px; padding-left: 20px;}
+	nav .fa { font-size: 19.4px; padding: 11px; padding-left: 6px; padding-right: 6px;}
+}
+
+@media (max-width:590px) {
+	nav li { margin-right: 2px;}
+	nav li > a { padding-right: 2px; padding-left: 2px; font-size: 14px;}
+	nav li .active { padding-right: 10px; padding-left: 10px;}
+	nav li a:hover,
+	nav li a:focus { padding-right: 10px; padding-left: 10px;}
+	nav .fa { font-size: 15.8px; padding: 12px; padding-left: 4px; padding-right: 4px;}
+}
+@media (max-width:420px) {
+	nav .social { display: none !important; }
+}

@@ -10,7 +10,9 @@
 		<meta name="keywords" content="christopher parrott, university of sheffield, sheffield" />
 		<link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/main.css" />
+		<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/nav.css" />
+		{% if page.url contains '/blog/' %}<link rel="stylesheet" type="text/css" href="css/blog.css" />{% endif %}		
 	</head>
 	<body>
 		<header>
@@ -28,14 +30,14 @@
 						<a class="fa fa-linkedin" href="https://www.linkedin.com/in/christophertmparrott/" target="_blank"></a>-->
 						<a class="fa fa-github" href="https://github.com/ZodiusInfuser" target="_blank"></a>
 					</div>				
+					<ul>
+						<li><a class="{% if page.url == '/' %}active {% endif %}secA" href="{{site.baseurl}}/">Home</a></li>
+						<li><a class="{% if page.url contains '/blog/' %}active {% endif %}secE" href="{{site.baseurl}}/blog/">Blog</a></li>
+						<li><a class="{% if page.url == '/publications/' %}active {% endif %}secB" href="{{site.baseurl}}/publications/">Publications</a></li>
+						<li><a class="{% if page.url == '/projects/' %}active {% endif %}secC" href="{{site.baseurl}}/projects/">Projects</a></li>
+						<li><a class="{% if page.url == '/contact/' %}active {% endif %}secD" href="{{site.baseurl}}/contact/">Contact</a></li>
+					</ul>
 				</div>
-				<ul class="column">
-					<li class="{% if page.url == '/' %}active{% endif %}"><a class="secA" href="{{site.baseurl}}/">Home</a></li>
-					<li class="{% if page.url contains '/blog/' %}active{% endif %}"><a class="secE" href="{{site.baseurl}}/blog/">Blog</a></li>
-					<li class="{% if page.url == '/publications/' %}active{% endif %}"><a class="secB" href="{{site.baseurl}}/publications/">Publications</a></li>
-					<li class="{% if page.url == '/projects/' %}active{% endif %}"><a class="secC" href="{{site.baseurl}}/projects/">Projects</a></li>
-					<li class="{% if page.url == '/contact/' %}active{% endif %}"><a class="secD" href="{{site.baseurl}}/contact/">Contact</a></li>
-				</ul>
 			</nav>
 		</header>
 		
@@ -47,8 +49,8 @@
 
 		<footer>
 			<div class="darken">
-				<div class="column">
-					<span class="footerbox">&copy; Christopher Parrott, 2018</span>
+				<div class="column footerbox">
+					Built using Jekyll - &copy; Christopher Parrott, 2018
 				</div>
 			</div>
 		</footer>
