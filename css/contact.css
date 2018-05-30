@@ -1,0 +1,29 @@
+/********************
+ * Colors
+ ********************/
+h2, h3, strong {
+	color: rgb(120, 160, 120);
+}
+
+
+/********************
+ * Page Elements
+ ********************/
+.portrait {
+	width: 140px;
+	padding-left: 40px;
+	padding-right: 40px;
+	transition: width .5s, padding .5s;
+}
+
+
+/********************
+ * Small device CSS
+ ********************/
+@media (max-width: 820px) {
+	.portrait{width: 105px; padding-left: 20px; padding-right: 20px;}
+}
+
+@media (max-width:590px) {
+	.portrait{width: 70px; padding-left: 0px; padding-right: 0px;}
+}

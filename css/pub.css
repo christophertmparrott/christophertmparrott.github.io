@@ -9,12 +9,6 @@ h2, h3, strong {
 /********************
  * Page Elements
  ********************/
-.homeimg {
-	max-width: 640px;
-	margin: auto;
-	padding-bottom: 20px;
-}
-
 .box > ul {
 	padding-left: 20px;
 	padding-bottom: 20px;
