@@ -82,9 +82,9 @@ The following part removes duplicated tags and invalid tags like blank tag.
 			The purpose of this snippet is to list all the tags you have in your site.
 			=======================
 			{% endcomment %}
-			<div class="tagsection">
-				<b>All Tags: </b>
-			{% for tag in tags %}
-				<a class="tag" href="{{site.baseurl}}/bloggg/tag/#{{tag | slugify}}">{{tag}}</a>
-			{% endfor %}
-			</div>
+				<div class="tagsection">
+					<b>All Tags: </b>
+				{% for tag in tags %}
+					<a class="tag" href="{{site.baseurl}}/bloggg/tag/#{{tag | slugify}}">{{tag}}</a>
+				{% endfor %}
+				</div>
