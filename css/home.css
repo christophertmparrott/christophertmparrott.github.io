@@ -24,10 +24,6 @@ h2, h3, strong {
 	padding-left: 20px;
 }
 
-p, .box > ul > li{
-	padding-bottom: 12px;
-}
-
 
 /********************
  * Small device CSS

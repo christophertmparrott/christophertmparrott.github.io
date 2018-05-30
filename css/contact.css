@@ -24,7 +24,7 @@ tr > .leftpad {
 	padding-left: 10px;
 }
 
-p, .box > ul > li{
+.box > ul > li{
 	padding-bottom: 12px;
 }
 

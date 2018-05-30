@@ -22,10 +22,6 @@ tr > .leftpad {
 	transition: width .5s;
 }
 
-p, .box > ul > li{
-	padding-bottom: 12px;
-}
-
 
 /********************
  * Small device CSS

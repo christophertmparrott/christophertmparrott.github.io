@@ -19,7 +19,6 @@ h2, h3, strong {
 
 .posthead h2 {
 	text-align: left;
-	text-decoration: none;
 }
 
 .tagsection {
@@ -210,6 +209,14 @@ h2, h3, strong {
 
 .taglist {
 	display: none;
+}
+
+.taglist h2 {
+	text-align: left;
+}
+
+.taglist li {
+	padding-bottom: 0px;
 }
 
 .taglist:target {
