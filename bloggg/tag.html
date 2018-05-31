@@ -52,23 +52,21 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 =======================
 {% endcomment %}
 				{% for tag in tags %}
-				<div class="posthead taglist" id="{{tag | slugify}}">
+				<div class="taglist" id="{{tag | slugify}}">
 					<h2 id="{{tag | slugify}}">Posts tagged with {{tag}}</h2>
 					<ul>
 					 {% for post in site.posts %}
 						 {% if post.tags contains tag %}
 						 <li>
-							<div class="posthead">
-							 <b><a href="{{site.baseurl}}{{post.url}}">
-							 {{post.title}}</a></b>
-							 &bull; <b>{{post.date | date: "%B %-d, %Y"}}</b>
-							 {% if post.tags %}
-							 &bull; Tags: 
-							 {% for tag in post.tags %}
-									<a class="tag" href="{{site.baseurl}}/bloggg/tag/#{{tag | slugify}}">{{tag}}</a>
-							 {% endfor %}
-							 {% endif %}
-							</div>
+							<b><a href="{{site.baseurl}}{{post.url}}">
+							{{post.title}}</a></b>
+							&bull; <b>{{post.date | date: "%B %-d, %Y"}}</b>
+							{% if post.tags %}
+							&bull; Tags: 
+							{% for tag in post.tags %}
+							<a class="tag" href="{{site.baseurl}}/bloggg/tag/#{{tag | slugify}}">{{tag}}</a>
+							{% endfor %}
+							{% endif %}
 						 </li>
 						 {% endif %}
 					 {% endfor %}
