@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/main.css" />
 		<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/nav.css" />
 		{% if page.url == '/' %}<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/home.css" />{% endif %}
-		{% if page.url contains '/bloggg/' %}<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/blog.css" />{% endif %}
+		{% if page.url contains '/blog/' %}<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/blog.css" />{% endif %}
 		{% if page.url == '/publications/' %}<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/pub.css" />{% endif %}
 		{% if page.url == '/projects/' %}<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/proj.css" />{% endif %}
 		{% if page.url == '/contact/' %}<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/contact.css" />{% endif %}
@@ -35,11 +35,11 @@
 						<a class="fa fa-github" href="https://github.com/ZodiusInfuser" target="_blank"></a>
 					</div>				
 					<ul>
-						<li><a class="{% if page.url == '/' %}active {% endif %}secA" href="{{site.baseurl}}/">Home</a></li>
-						<li><a class="{% if page.url contains '/bloggg/' %}active {% endif %}secE" href="{{site.baseurl}}/blog/">Blog</a></li>
-						<li><a class="{% if page.url == '/publications/' %}active {% endif %}secB" href="{{site.baseurl}}/publications/">Publications</a></li>
-						<li><a class="{% if page.url == '/projects/' %}active {% endif %}secC" href="{{site.baseurl}}/projects/">Projects</a></li>
-						<li><a class="{% if page.url == '/contact/' %}active {% endif %}secD" href="{{site.baseurl}}/contact/">Contact</a></li>
+						<li><a class="{% if page.url == '/' %}active {% endif %}home" href="{{site.baseurl}}/">Home</a></li>
+						<li><a class="{% if page.url contains '/blog/' %}active {% endif %}blog" href="{{site.baseurl}}/blog/">Blog</a></li>
+						<li><a class="{% if page.url == '/publications/' %}active {% endif %}pubs" href="{{site.baseurl}}/publications/">Publications</a></li>
+						<li><a class="{% if page.url == '/projects/' %}active {% endif %}projects" href="{{site.baseurl}}/projects/">Projects</a></li>
+						<li><a class="{% if page.url == '/contact/' %}active {% endif %}contact" href="{{site.baseurl}}/contact/">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
