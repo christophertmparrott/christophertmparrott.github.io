@@ -220,6 +220,11 @@ h2, h3, strong {
 	border-bottom-left-radius: 8px;
 }
 
+.taghead {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
 .taglist {
 	display: none;
 }

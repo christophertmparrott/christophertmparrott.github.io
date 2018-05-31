@@ -38,13 +38,13 @@ The following part removes duplicated tags and invalid tags like blank tag.
 The purpose of this snippet is to list all the tags you have in your site.
 =======================
 {% endcomment %}
-<!--<div class="taghead">
-	<h2 class="secE">Tags</h2>
-{% for tag in tags %}
-	<a class="darken" href="#{{tag | slugify}}">{{tag}}</a>
-{% endfor %}
-</div>-->
-
+				<h2>All Tags</h2>
+				<div class="taghead">
+					<a class="tag" href="#">#</a>
+				{% for tag in tags %}
+					<a class="tag" href="#{{tag | slugify}}">{{tag}}</a>
+				{% endfor %}
+				</div>
 
 {% comment %}
 =======================
@@ -73,10 +73,3 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 					</ul>
 				</div>
 				{% endfor %}
-
-				<div class="tagsection">
-					<b>All Tags: </b>
-				{% for tag in tags %}
-					<a class="tag" href="#{{tag | slugify}}">{{tag}}</a>
-				{% endfor %}
-				</div>
