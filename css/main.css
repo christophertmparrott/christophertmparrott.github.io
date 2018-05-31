@@ -64,7 +64,7 @@ footer {
  * Colors
  ********************/
 html {
-	background: rgb(220, 220, 220) url(images/background.jpg) no-repeat repeat top center scroll; 
+	background: rgb(220, 220, 220) url(../images/background.jpg) no-repeat repeat top center scroll; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
