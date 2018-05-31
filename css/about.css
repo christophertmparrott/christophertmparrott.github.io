@@ -1,0 +1,24 @@
+/********************
+ * Colors
+ ********************/
+h2, h3, strong {
+	color: rgb(160, 120, 160);
+}
+
+
+/********************
+ * Page Elements
+ ********************/
+.box > ul {
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.box > ul > li > ul{
+	padding-left: 20px;
+}
+
+
+/********************
+ * Small device CSS
+ ********************/
