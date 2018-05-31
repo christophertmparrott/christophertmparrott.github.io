@@ -247,3 +247,21 @@ h2, h3, strong {
 /********************
  * Small device CSS
  ********************/
+ @media (max-width: 820px) {
+	.pagenav a,
+	.postnav a { padding: 8px 16px; }
+	.pagenav a:hover,
+	.pagenav a:focus,
+	.postnav a:hover,
+	.postnav a:focus { padding-left: 30px; padding-right: 30px; }
+}
+
+@media (max-width:590px) {
+	.pagenav a,
+	.postnav a { padding: 6px 12px; }
+	
+	.pagenav a:hover,
+	.pagenav a:focus,
+	.postnav a:hover,
+	.postnav a:focus { padding-left: 20px; padding-right: 20px; }
+}
