@@ -1,4 +1,12 @@
 /********************
+ * Fonts
+ ********************/
+.tag span {
+	font-family: Calibri, Arial, sans-serif;
+}
+
+
+/********************
  * Colors
  ********************/
 h2, h3, strong {
@@ -56,6 +64,11 @@ h2, h3, strong {
 
 	opacity: 0.85;
 	filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+
+.share .tag {
+	padding-top: 4px;
+	padding-bottom: 4px;
 }
 
 .pagenav {
