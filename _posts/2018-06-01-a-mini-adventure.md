@@ -16,7 +16,7 @@ For close to a decade I have been doing fun electronics and programming projects
 
 Now that this blog is live, expect to see weekly (I hope) updates on a variety of hardware and software projects I have in the works, as well as several planned robotics projects down the line too! There may also be more random posts such as kit reviews or thoughts on any future maker events I attend. Here's a teaser of some of the projects already in the works!
 
-![Project Teaser](https://christophertmparrott.github.io/bloggg/images/2018-06-01-project_teaser.png "Project Teaser")
+![Project Teaser](https://christophertmparrott.github.io/bloggg/images/2018-06-01-project_teaser.jpg "Project Teaser")
 
 So, if this blog sounds like something you would be interested in, I encourage you to add it to your favourites and follow me on social media!
 
