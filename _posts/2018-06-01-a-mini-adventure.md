@@ -5,9 +5,13 @@ category: blog
 tags: [Misc]
 ---
 
-Hi and welcome to my blog! This is my first time blogging so let me begin by giving you a bit of the reasoning behind why I set this up.
+Hi and welcome to my blog! This is my first time blogging so let me begin by telling you a bit about myself and why I have set this up.
 
-For close to a decade I have been doing fun electronics and programming projects in my spare time, sharing my progress with friends and family, but rarely with the wider world. Recently I had the opportunity to attend the UK Maker Faire in Newcastle. This was my first time going, and although the event was nowhere near the scale of those in other countries, being there and getting to meet makers like [Colin Furze](https://www.youtube.com/user/colinfurze) and [Dr Lucy Rogers](https://lucyrogers.com/) opened my eyes to the maker community and the possibility of being a part of it! For that though, I need to share my projects with a wider audience, and so I set this website up!
+Hi, I'm Chris and I have always been fascinated by how things work. I was the kid that would drag his parents out to the annual funfair to watch new attractions in action just so I could figure out how they worked. I would then come home and recreate them in Lego, using hand-driven mechanisms initially but quickly moving on to automation once the first Mindstorms kits were released. This, along with the many robot-themed films and TV shows of the 90s, is what gave me a love for robotics. Since then I have focused my academic studies on robotics related subjects and as of last year became a doctor, having gained my PhD for creating a self-reconfigurable modular robot (you can find my thesis here). I now work as a Robotics Researcher at the University.
+
+Outside of academia, I do a variety of side projects using the electronics, programming, and design skills I gained from my studies. Some of these are listed in my projects page, but I am particularly proud of my Hexapod walker and my contributions to the Infernal Robotics mod for Kerbal Space Program. The Hexapod was the first real robot that I designed myself, and my work on Infernal Robotics has brought many new possibilities to the game for players that were not available before.
+
+So why have I decided to set this blog up? Well, I have been doing these fun side projects and sharing my progress with friends and family, but rarely do I share them with the wider world. Recently I had the opportunity to attend the UK Maker Faire in Newcastle. This was my first time going, and although the event was not to the scale of those in other countries, being there and getting to meet makers like [Colin Furze](https://www.youtube.com/user/colinfurze) and [Dr Lucy Rogers](https://lucyrogers.com/) made me realise that the maker community is something I would like to be a part of! For that though I need to share my projects with a wider audience, so I set up this website!
 
 <!--excerpt-->
 
