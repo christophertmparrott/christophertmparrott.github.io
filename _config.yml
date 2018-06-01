@@ -2,5 +2,5 @@ baseurl: ""
 exclude: ['README.md', '.gitignore']
 permalink: pretty
 paginate: 5
-paginate_path: "/bloggg/page:num"
+paginate_path: "/blog/page:num"
 excerpt_separator: "<!--excerpt-->"
