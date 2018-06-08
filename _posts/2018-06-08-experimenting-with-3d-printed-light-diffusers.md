@@ -21,11 +21,11 @@ Since working on this ring clock, I have been distracted by other projects, the 
 
 ![Cube Comparison](https://christophertmparrott.github.io/blog/images/2018-06-08-cube_comparison.jpg "Cube with and without translucent edges")
 
-Here you can see what the panel looks like with the diffuser removed. The diffuser is shown on the right in the orientation it was printed. Unlike with the ring clock, the diffuser and divider are a single piece, using the "change colour at layer" option of the Prusa. I used this same technique to switch from black to pearl with the panel edges.
+Below you can see what the panel looks like with the diffuser removed. The diffuser is shown on the right in the orientation it was printed. Unlike with the ring clock, the diffuser and divider are a single piece, using the "change colour at layer" option of the Prusa. I used this same technique to switch from black to pearl with the panel edges.
 
 ![Cube Separated](https://christophertmparrott.github.io/blog/images/2018-06-08-cube_separated.jpg "Cube with the top diffuser separated")
 
-That has been my experiments with 3D printed light diffusers. I hope that this will inspire you to give it a try! It is certainly worth having some filament like the Rigid.ink silver to hand, as it's also ideal for printing [Lithophanes](https://www.youtube.com/watch?v=BfiwdVMa-UA) to give out as gifts! I'll leave you with a picture of some light diffusion experiments I'm been up to this week.
+That has been my experiments with 3D printed light diffusers. I hope that this will inspire you to give it a try! It is certainly worth having some filament like the Rigid.ink silver to hand, as it's also ideal for printing [Lithophanes](https://www.youtube.com/watch?v=BfiwdVMa-UA) to give out as gifts! I'll leave you with a picture of some light piping experiments I've been up to this week.
 
 ![Cube Edges](https://christophertmparrott.github.io/blog/images/2018-06-08-cube_edges.jpg "Illuminated cube edges")
 
