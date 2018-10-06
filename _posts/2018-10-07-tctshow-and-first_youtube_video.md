@@ -15,9 +15,13 @@ The free samples alone would have made attending the event worthwhile, but the r
 
 To close this post off, I thought I would share the picture I got with James and OpenDog, as well as one next to a 3D printed Johnny 5 replica created by Chris Wright ([WrightsRobotics](https://www.instagram.com/wrightsrobotics/)).
 
-![Me & James Brutons & OpenDog](https://christophertmparrott.github.io/blog/images/2018_10_06-me_and_james_bruton.jpg "Me with James Brutons and OpenDog")  
+![Me & James Brutons & OpenDog](https://christophertmparrott.github.io/blog/images/2018-10-07-me_and_james_bruton.jpg "Me with James Brutons and OpenDog")  
 
-![Me & Johnny 5 & Chris Wright](https://christophertmparrott.github.io/blog/images/2018_10_06-me_and_johnny5.jpg "Me with James Brutons and OpenDog")  
+![Me & Johnny 5 & Chris Wright](https://christophertmparrott.github.io/blog/images/2018-10-07-me_and_johnny5.jpg "Me with James Brutons and OpenDog")  
+
+Oh and I got a blurry shot of Josef Prusa from Prusa Research too!
+
+![Blurry Josef](https://christophertmparrott.github.io/blog/images/2018-10-07-blurry_josef.jpg "Blurry Josef") 
 
 Cheers,  
 -Chris
