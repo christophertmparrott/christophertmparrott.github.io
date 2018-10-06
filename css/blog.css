@@ -248,6 +248,13 @@ h2, h3, strong {
     margin-right: auto;
 }
 
+.blogpost iframe {
+	max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /********************
  * Small device CSS

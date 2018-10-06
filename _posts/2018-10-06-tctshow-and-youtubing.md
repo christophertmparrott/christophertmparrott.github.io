@@ -5,4 +5,4 @@ category: blog
 tags: [3D Printing, Event]
 ---
 
-{% include youtubePlayer.html id=2WBp6MS7MwQ %}s
+{% include youtubePlayer.html id="2WBp6MS7MwQ" %}
