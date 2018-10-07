@@ -38,7 +38,8 @@ header  h1 {
 	font-weight: bold;
 	font-family: 'Iceland', Calibri, Arial, sans-serif;
 	padding-bottom: 0px;
-	transition: font-size .5s;
+	padding-left: 92px;
+	transition: font-size .5s, padding-left .5s;
 }
 
 header  h2 {
@@ -47,11 +48,20 @@ header  h2 {
 	font-family: 'Iceland', Calibri, Arial, sans-serif;	
 	text-align: left;
 	padding-bottom: 15px;
-	padding-left: 10px;
+	padding-left: 92px;
 	white-space: nowrap;
 	text-decoration: none;
 	margin-bottom: 0px;
-	transition: font-size .5s;
+	transition: font-size .5s, padding-left .5s;
+}
+
+header img {
+	position: absolute;
+	padding-left: 10px;
+	padding-top: 24px;
+	width: 72px;
+	height: 72px;
+	transition: width .5s, height .5s, padding-top .5s;
 }
 
 footer {
@@ -201,8 +211,9 @@ p, article ul > li{
 	h2 { font-size: 30px; }
 	h3 { font-size: 22px; }
 	strong { font-size: 20px; }
-	header h1 {font-size: 44px; }
-	header h2 {font-size: 18px; }
+	header h1 {font-size: 44px; padding-left: 70px; }
+	header h2 {font-size: 18px; padding-left: 70px; }
+	header img {width: 55px; height: 55px; padding-top: 21px;}
 	footer {font-size: 14px; height: 20px; bottom: 20px; }
 	.box {padding-top: 146px; padding-left: 10px; padding-right: 10px; }
 }
@@ -212,8 +223,9 @@ p, article ul > li{
 	h2 { font-size: 26px; }
 	h3 { font-size: 20px; }
 	strong { font-size: 16px; }
-	header h1 {font-size: 30px; padding-top: 10px; }
-	header h2 {font-size: 12px; padding-bottom: 10px; }
+	header h1 {font-size: 30px; padding-top: 10px; padding-left: 51px; }
+	header h2 {font-size: 12px; padding-bottom: 10px; padding-left: 51px; }
+	header img {width: 36px; height: 36px; padding-top: 15px;}
 	footer {font-size: 10px; height: 16px; bottom: 16px; }
 	.box {padding-top: 110px; padding-left: 5px; padding-right: 5px; }
 }
