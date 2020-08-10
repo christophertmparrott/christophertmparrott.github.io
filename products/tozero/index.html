@@ -4,9 +4,12 @@ title: ToZero Overview
 description: An overview of the ToZero adapter boards
 ---
 				<h2>ToZero - Use Raspberry Pi HATs with a Teensy!</h2>
-				<p>The ToZero is a Raspberry Pi Zero form-factor adapter board for the Arduino-compatible Teensy microcontroller, opening up a whole world of Pi HATs.</p>
+				<p>The ToZero is a Raspberry Pi Zero form-factor adapter board for the Arduino-compatible Teensy microcontroller, opening up a whole world of Pi HATs. There are two versions of the ToZero board, the 3x supporting the Teensy 3 family (3.2/.5.6 & LC), and the 4x supporting the Teensy 4 family (4.0 & 4.1).
 				
-				<p>There are two versions of the ToZero board, the 3x supporting the Teensy 3 family (3.2/.5.6 & LC), and the 4x supporting the Teensy 4 family (4.0 & 4.1).
+				<div class="homeimg">
+					<img src="/images/tozeros+teensys.jpg" alt="Project Teaser" title="Project Teaser" width="100%"/>
+					<center>(Teensy 3.2, 3.5, 4.0, and 4.1 mounted in their respective ToZero adapters)</center>
+				</div>
 				
 				<h3>Features</h3>
 				
@@ -15,10 +18,15 @@ description: An overview of the ToZero adapter boards
 					<li>Headers for Teensy-only functions (e.g. ADCs, DACs, CAN Bus, S/PDIF)</li>
 					<li>Headers for secondary I2C and SPI channels that match the Pimoroni breakout garden pinout</li>
 					<li>A power multiplexer with secondary USB / Screw Terminal 5V power input</li>
-					<li>A dedicated 3.3V regulator for Pi HATs that supports the Teensy 4's on/off feature</li>
+					<li>A dedicated 600mA 3.3V regulator for Pi HATs that supports the Teensy 4's on/off feature</li>
 					<li>3V Real-time Clock (RTC) battery connector</li>
 				</ul>
 
+				<div class="homeimg">
+					<img src="/images/tozero-rtc+onoff.jpg" alt="Project Teaser" title="Project Teaser" width="100%"/>
+					<center>(Teensy 4.1 with RTC battery and on/off switch connected)</center>
+				</div>
+				
 				<h3>Power Multiplexer</h3>
 				
 				<p>Some Raspberry Pi HATs draw more than the 500mA that regular USB supports (<a href="https://shop.pimoroni.com/products/unicorn-hat-hd" target="_blank">Unicorn HAT HD</a> for example), leading to issues when programming the Teensy via a PC due to the Teensy 3's onboard fuse. To address this, the power multiplexer was added. Simply connect a secondary 5V power source to either the ToZero's onboard USB port or screw terminals, and the multiplexer will seamlessly use that power rather than your PCs!</p>
@@ -35,6 +43,13 @@ description: An overview of the ToZero adapter boards
 				<p>A 2-pin Molex Picoblade connector is used for the ToZero's RTC clock function. This is the same connector as found on many CR2032 CMOS batteries used by many computer motherboards and can easily be found on ebay and other online marketplaces. Just be sure it is in fact Molex (as there are JST versions), and that the polarity is correct.</p>
 				
 				<p><b>Note: The Teensy LC does not have a real-time clock, and the Teensy 3.2 needs a secondary clock crystal soldered to it to use the feature.</b></p>
+				<br />
+				
+				<h3>4x On/Off</h3>
+				
+				<p>The Teensy 4.0 and 4.1 have an on/off feature that allows them to be shut down and restarted by connecting a pin to ground for a few seconds (more info <a href="https://www.pjrc.com/store/teensy40.html" target="_blank">here</a>). To make this easier to use, the ToZero breaks out a ground pin next to the on/off pin, allowing two pin power buttons (as you would find in a computer) to be used. On the ToZero 3x these pins are replaced with analog ground and an ADC capable pin.</p>
+				
+				<p><b>Note: The shutdown feature only cuts power to the 3.3V line, not the 5V, so some HATs may not respond to this feature.</b></p>
 				<br />
 				
 				<h2>ToZero 3x Pinouts</h2>
