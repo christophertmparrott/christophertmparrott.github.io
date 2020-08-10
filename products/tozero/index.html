@@ -38,6 +38,18 @@ description: An overview of the ToZero adapter boards
 				<p><b>Note: The multiplexer on the alpha boards has an issue with seamless switchover, meaning it can only switch from Teensy power to Secondary power, not Secondary power to Teensy power. This will be fixed in future board revisions.</b></p>
 				<br />
 				
+				<h3>Extra Headers</h3>
+				
+				<p>Each ToZero board includes two extra header locations for exposing additional pins of the Teensy. In the case of the 4.1, all of these come from the edge pins. For the 3.2, 3.5, 3.6, and 4.0 however, up to ten of these pins come from the underside pads. To use these a 2x5 SMT header needs to be soldered as shown in the image below.</p>
+				
+				<div class="homeimg">
+					<img src="/products/tozero/images/teensy_undersides.jpg" alt="Project Teaser" title="Project Teaser" width="100%"/>
+					<center>(Teensy 3.2 and 4.0 with underside pins soldered)</center>
+				</div>
+				
+				<p>Adding this header can be tricky to do (especially with the 4.0!) and makes insertion and removal of the Teensy from the ToZero a lot more fragile, so only do this if you are in need of those extra pin functions and are competent at soldering. It is recommended to use a long 0.1" socket (such as those bundled with the ToZero) to align the SMT header when soldering its first pin.</p>
+				<br />
+				
 				<h3>RTC Battery</h3>
 				
 				<p>A 2-pin Molex Picoblade connector is used for the ToZero's RTC clock function. This is the same connector as found on many CR2032 CMOS batteries used by many computer motherboards and can easily be found on ebay and other online marketplaces. Just be sure it is in fact Molex (as there are JST versions), and that the polarity is correct.</p>
