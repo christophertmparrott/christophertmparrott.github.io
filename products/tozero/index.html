@@ -25,6 +25,8 @@ description: An overview of the ToZero adapter boards
 				<p>To get started with your new ToZero follow the <a href="https://www.pjrc.com/teensy/td_download.html" target="_blank">Teensy installation guide</a>, taking you through the steps of installing the Arduino IDE and the Teensyduino add-on for your operating system of choice. Once installed, head to the <a href="https://github.com/ZodiusInfuser/ToZeroAdapters" target="_blank">ToZeroAdapters library</a> on Github and download the latest version. This library contains the pin remapping that lets you reference Teensy pins by their GPIO number, making porting of Raspberry Pi code easier. It also includes a number of example sketches for driving Raspberry Pi HATs (this will be expanded upon over time).</p>
 				</br>
 				
+				<h2>Details</h2>
+				
 				<h3>Power Multiplexer</h3>
 				
 				<p>Some Raspberry Pi HATs draw more than the 500mA that regular USB supports (<a href="https://shop.pimoroni.com/products/unicorn-hat-hd" target="_blank">Unicorn HAT HD</a> for example), leading to issues when programming the Teensy via a PC due to the Teensy 3's onboard fuse. To address this, the power multiplexer was added. Simply connect a secondary 5V power source to either the ToZero's onboard USB port or screw terminals, and the multiplexer will seamlessly use that power rather than your PCs!</p>
@@ -63,9 +65,37 @@ description: An overview of the ToZero adapter boards
 				<p><b>Note: The shutdown feature only cuts power to the 3.3V line, not the 5V, so some HATs may not respond to this feature.</b></p>
 				<br />
 				
+				<h3>Pin Remapping</h3>
+				
+				<p>Depending on which Teensy is used, and whether the underside 2x5 header is soldered or not (to keep the Teensy breadboard compatible for example), some pins on the ToZero's GPIO header may not be connected. This could cause problems for certain Pi HATs, either preventing them from working or completely disabling certain features.</p>
+				
+				<p>By default the pins in question are: <b>GPIO_0 (ID_SD)</b>, <b>GPIO_1 (ID_SC)</b>, <b>GPIO_5</b>, <b>GPIO_6</b>, <b>GPIO_7 (CE1)</b>, and <b>GPIO_26</b>. If any of the last four are needed by</p>
+				
+				<p>In the event that a particular HAT needs any of the last four pins, then solder jumpers on the undersides of both ToZero models can be used to remap other board function to them.</p>
+				
+				<p>For the ToZero 3x these remappings are:</p>
+				<ul>
+					<li>Teensy pin 5 can be swapped from GPIO_27 to GPIO_26</li>
+					<li>Teensy pin 15 can be swapped from GPIO_16 to GPIO_7 (CE1)</li>
+					<li>GPIO_5 can be swapped from Teensy pin 24 (only on 3.2/.5/.6) to Teensy pin 3 (CAN TX)</li>
+					<li>GPIO_6 can be swapped from Teensy pin 25 (only on 3.2/.5/.6) to Teensy pin 4 (CAN RX)</li>
+				</ul>
+				
+				<p>For the ToZero 4x these remappings are:</p>
+				<ul>
+					<li>Teensy pin 5 can be swapped from GPIO_27 to GPIO_26</li>
+					<li>Teensy pin 9 can be swapped from GPIO_16 to GPIO_7 (CE1)</li>
+					<li>GPIO_5 can be swapped from Teensy pin 36 (only on 4.1) to Teensy pin 15 (S/PDIF RX)</li>
+					<li>GPIO_6 can be swapped from Teensy pin 37 (only on 4.1) to Teensy pin 14 (S/PDIF TX)</li>
+				</ul>
+				
+				<p>It is recommended that you visit <a href="pinout.xyz" target="_blank"> to look up the pinout of the Pi HATs you plan to use, and check them against the pinout diagram for your Teensy & ToZero below before installing any HAT.</p>
+				<br />
+				
+				
 				<h2>ToZero 3x Pinouts</h2>
 				
-				<p>Here are the pinout diagrams for the four Teensy boards that the ToZero 3x supports.</p>
+				<p>Here are the pinout diagrams for the four Teensy boards that the ToZero 3x supports. Pins with a rounded box around them match the pin functions of the Raspberry Pi, and pins with diagonal stripes over them are ones that need inner / underside pads of the teensy soldering.</p>
 				<br />
 				
 				<h3>Teensy 3.2</h3>
