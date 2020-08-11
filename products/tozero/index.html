@@ -69,33 +69,33 @@ description: An overview of the ToZero adapter boards
 				
 				<p>Depending on which Teensy is used, and whether the underside 2x5 header is soldered or not (to keep the Teensy breadboard compatible for example), some pins on the ToZero's GPIO header may not be connected. This could cause problems for certain Pi HATs, either preventing them from working or completely disabling certain features.</p>
 				
-				<p>By default the pins in question are: <b>GPIO_0 (ID_SD)</b>, <b>GPIO_1 (ID_SC)</b>, <b>GPIO_5</b>, <b>GPIO_6</b>, <b>GPIO_7 (CE1)</b>, and <b>GPIO_26</b>. If any of the last four are needed by</p>
-				
-				<p>In the event that a particular HAT needs any of the last four pins, then solder jumpers on the undersides of both ToZero models can be used to remap other board function to them.</p>
+				<p>By default the pins in question are: <b>GPIO_0 (ID_SD)</b>, <b>GPIO_1 (ID_SC)</b>, <b>GPIO_5</b>, <b>GPIO_6</b>, <b>GPIO_7 (CE1)</b>, and <b>GPIO_26</b>. If any of the last four are needed by a particular HAT then solder jumpers on the undersides of both ToZero models can be used to remap other board function to them.</p>
 				
 				<p>For the ToZero 3x these remappings are:</p>
 				<ul>
-					<li>Teensy pin 5 can be swapped from GPIO_27 to GPIO_26</li>
-					<li>Teensy pin 15 can be swapped from GPIO_16 to GPIO_7 (CE1)</li>
-					<li>GPIO_5 can be swapped from Teensy pin 24 (only on 3.2/.5/.6) to Teensy pin 3 (CAN TX)</li>
-					<li>GPIO_6 can be swapped from Teensy pin 25 (only on 3.2/.5/.6) to Teensy pin 4 (CAN RX)</li>
+					<li>Pin 5 can be swapped from <b>GPIO_27</b> to <b>GPIO_26</b></li>
+					<li>Pin 15 can be swapped from <b>GPIO_16</b> to <b>GPIO_7 (CE1)</b></li>
+					<li><b>GPIO_5</b> can be swapped from Pin 24 (only on Teensy 3.2/.5/.6) to Pin 3 (CAN TX)</li>
+					<li><b>GPIO_6</b> can be swapped from Pin 25 (only on Teensy 3.2/.5/.6) to Pin 4 (CAN RX)</li>
 				</ul>
 				
 				<p>For the ToZero 4x these remappings are:</p>
 				<ul>
-					<li>Teensy pin 5 can be swapped from GPIO_27 to GPIO_26</li>
-					<li>Teensy pin 9 can be swapped from GPIO_16 to GPIO_7 (CE1)</li>
-					<li>GPIO_5 can be swapped from Teensy pin 36 (only on 4.1) to Teensy pin 15 (S/PDIF RX)</li>
-					<li>GPIO_6 can be swapped from Teensy pin 37 (only on 4.1) to Teensy pin 14 (S/PDIF TX)</li>
+					<li>Pin 5 can be swapped from <b>GPIO_27</b> to <b>GPIO_26</b></li>
+					<li>Pin 9 can be swapped from <b>GPIO_16</b> to <b>GPIO_7 (CE1)</b></li>
+					<li><b>GPIO_5</b> can be swapped from Pin 36 (only on Teensy 4.1) to Pin 15 (S/PDIF RX)</li>
+					<li><b>GPIO_6</b> can be swapped from Pin 37 (only on Teensy 4.1) to Pin 14 (S/PDIF TX)</li>
+					<li>(Teensy 4.0 only!) <b>GPIO_14 (UART_TX)</b> can be switched to MISO1 and joined to the Pimoroni SPI breakout header
+					<li>(Teensy 4.0 only!) <b>GPIO_15 (UART_RX)</b> can be switched to CS1 and joined to the Pimoroni SPI breakout header
 				</ul>
 				
-				<p>It is recommended that you visit <a href="pinout.xyz" target="_blank"> to look up the pinout of the Pi HATs you plan to use, and check them against the pinout diagram for your Teensy & ToZero below before installing any HAT.</p>
+				<p>It is recommended that you visit <a href="pinout.xyz" target="_blank">pinout.xyz</a> to look up the pinout of the Pi HATs you plan to use, and check them against the pinout diagram for your Teensy and ToZero below before installing any HAT.</p>
 				<br />
 				
 				
 				<h2>ToZero 3x Pinouts</h2>
 				
-				<p>Here are the pinout diagrams for the four Teensy boards that the ToZero 3x supports. Pins with a rounded box around them match the pin functions of the Raspberry Pi, and pins with diagonal stripes over them are ones that need inner / underside pads of the teensy soldering.</p>
+				<p>Here are the pinout diagrams for the four Teensy boards that the ToZero 3x supports. Pins with an outlined box around them match the pin functions of the Raspberry Pi, and pins with diagonal stripes over them are ones that need inner or underside pads of the Teensy soldering.</p>
 				<br />
 				
 				<h3>Teensy 3.2</h3>
